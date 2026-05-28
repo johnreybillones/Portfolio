@@ -13,7 +13,7 @@ const Footer = () => (
         <div className="flex flex-col gap-6">
           <Link href="/" className="w-fit">
             <Image
-              src="/logo.png"
+              src="/branding/logo.png"
               alt="John Rey F. Billones Logo"
               width={100}
               height={100}

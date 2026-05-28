@@ -17,7 +17,7 @@ export const projectsData = [
     code: "",
     demo: "http://techgap.vercel.app",
     date: "",
-    images: ["/logo.png"],
+    images: ["/branding/logo.png"],
     videos: [""],
     highlights: [
       "Architected and deployed a full-stack decision-support system using a FastAPI backend and React frontend, managed via a cloud-native stack of Vercel, Render, and Supabase.",
@@ -39,7 +39,7 @@ export const projectsData = [
     code: "",
     demo: "http://agrain.vercel.app",
     date: "",
-    images: ["/logo.png"],
+    images: ["/branding/logo.png"],
     videos: [""],
     highlights: [
       "Developed an offline-first Progressive Web App (PWA) in a 1-week sprint, implementing IndexedDB for persistent local data storage in zero-connectivity environments.",
@@ -61,7 +61,7 @@ export const projectsData = [
     code: "",
     demo: "https://docs.google.com/spreadsheets/d/1Zs_KvcTe85bJoxMW5xRIGHkNmhteyWwSeI7fsem4WoI/edit?gid=376232159#gid=376232159",
     date: "",
-    images: ["/logo.png"],
+    images: ["/branding/logo.png"],
     videos: [""],
     highlights: [
       "Developed a personalized time-tracking system in Google Sheets adopted by 200+ student assistants to independently manage, calculate, and verify their duty hours with precision.",

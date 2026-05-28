@@ -1,5 +1,5 @@
 "use client";
-import img from "@/../public/logo.png";
+import img from "@/../public/branding/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

@@ -23,8 +23,8 @@ if (!self.define) {
     if (e[n]) return;
     let r = {};
     const l = (s) => a(s, n),
-      t = { module: { uri: n }, exports: r, require: l };
-    e[n] = Promise.all(i.map((s) => t[s] || l(s))).then((s) => (c(...s), r));
+      f = { module: { uri: n }, exports: r, require: l };
+    e[n] = Promise.all(i.map((s) => f[s] || l(s))).then((s) => (c(...s), r));
   };
 }
 define(["./workbox-f1770938"], function (s) {
@@ -35,11 +35,11 @@ define(["./workbox-f1770938"], function (s) {
     s.precacheAndRoute(
       [
         {
-          url: "/_next/static/0hGRvFX940_JacUUYUoik/_buildManifest.js",
+          url: "/_next/static/RBOtu-BjEECbLIRyLCx8i/_buildManifest.js",
           revision: "3bc51a595c92c25dedc0a74895787a7e",
         },
         {
-          url: "/_next/static/0hGRvFX940_JacUUYUoik/_ssgManifest.js",
+          url: "/_next/static/RBOtu-BjEECbLIRyLCx8i/_ssgManifest.js",
           revision: "b6652df95db52feb4daf4eca35380933",
         },
         {
@@ -67,8 +67,8 @@ define(["./workbox-f1770938"], function (s) {
           revision: "a29bc711fe659d46",
         },
         {
-          url: "/_next/static/chunks/380-ed2d4afc02b0b7d1.js",
-          revision: "ed2d4afc02b0b7d1",
+          url: "/_next/static/chunks/380-c19ded48a2f4c022.js",
+          revision: "c19ded48a2f4c022",
         },
         {
           url: "/_next/static/chunks/3d47b92a-a75679539f4a0241.js",
@@ -115,8 +115,8 @@ define(["./workbox-f1770938"], function (s) {
           revision: "f342b7cffc01feb0",
         },
         {
-          url: "/_next/static/chunks/667-15add7b229ea8aca.js",
-          revision: "15add7b229ea8aca",
+          url: "/_next/static/chunks/667-0899c852a5f9d5da.js",
+          revision: "0899c852a5f9d5da",
         },
         {
           url: "/_next/static/chunks/696-29f77d13f7e30458.js",
@@ -143,8 +143,8 @@ define(["./workbox-f1770938"], function (s) {
           revision: "671f0afcca457b09",
         },
         {
-          url: "/_next/static/chunks/app/components/about/page-b681e2aeb4aa4aef.js",
-          revision: "b681e2aeb4aa4aef",
+          url: "/_next/static/chunks/app/components/about/page-e043c046e6c85290.js",
+          revision: "e043c046e6c85290",
         },
         {
           url: "/_next/static/chunks/app/components/education/page-930f0f78ef64af87.js",
@@ -163,8 +163,8 @@ define(["./workbox-f1770938"], function (s) {
           revision: "038abe2ad6ef9f30",
         },
         {
-          url: "/_next/static/chunks/app/layout-0e4c2b36196f6582.js",
-          revision: "0e4c2b36196f6582",
+          url: "/_next/static/chunks/app/layout-0c57f6a62e29d546.js",
+          revision: "0c57f6a62e29d546",
         },
         {
           url: "/_next/static/chunks/app/manifest.webmanifest/route-a8c5a7dc707f2842.js",
@@ -238,44 +238,50 @@ define(["./workbox-f1770938"], function (s) {
           url: "/_next/static/media/logo.70007a8e.png",
           revision: "627a7304232cc274dbcae5bc96a8cf08",
         },
-        { url: "/logo.png", revision: "627a7304232cc274dbcae5bc96a8cf08" },
+        {
+          url: "/branding/logo.png",
+          revision: "627a7304232cc274dbcae5bc96a8cf08",
+        },
         {
           url: "/lottie/build.json",
-          revision: "7f35591080c60b039576187683de32e3",
+          revision: "a6ddf6e22242cad2ca6085b24d1c277f",
         },
         {
           url: "/lottie/code.json",
-          revision: "cee313c8dea1e2ba5e82309d0209294f",
+          revision: "ae769dfb5eafc645619f9279761e43ad",
         },
         {
           url: "/lottie/coding.json",
-          revision: "0649d95a6ec7f0dccfde0c48dd7662c1",
+          revision: "9780a8f715b9a3accc2d2399551e0a44",
         },
         {
           url: "/lottie/contact.json",
-          revision: "2d1bcce2fdc8035225cc961b42d77702",
+          revision: "2d74c8213b82654fba5362749e289739",
         },
         {
           url: "/lottie/development.json",
-          revision: "582c52ec2d8176476aa539d942d100a4",
+          revision: "31f75da79676027a6a6384b4e7562eaf",
         },
         {
           url: "/lottie/education.json",
-          revision: "970c2d83617e2a69a10f853a8420b19e",
+          revision: "13c1078ac32e1572de723b853d6d59ad",
         },
         {
           url: "/lottie/js.json",
-          revision: "183cef149aacbf5f127079633100b52a",
+          revision: "ad2ffff084c35a1ef8212677c89dbc34",
         },
         {
           url: "/lottie/lotti.json",
-          revision: "3647405daf90aadd70e003ce51ae236a",
+          revision: "c1bdff0f692923acf7c8301d5deac9fd",
         },
         {
           url: "/lottie/study.json",
-          revision: "c7f0f0aab6a33d8e8d0edf89e3b3c076",
+          revision: "5e985e66436f52e7e9107e59bac9f127",
         },
-        { url: "/profile.jpg", revision: "8b29e5e8be3bb8a7e71f0a8941a10fc3" },
+        {
+          url: "/profile/profile.jpg",
+          revision: "8b29e5e8be3bb8a7e71f0a8941a10fc3",
+        },
         {
           url: "/svg/common/blur-23.svg",
           revision: "57a6a91b33f834819ee485044cfea3f1",

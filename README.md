@@ -8,7 +8,7 @@ Personal portfolio built with Next.js and Tailwind CSS, showcasing experience, p
 
 ## Screenshot
 
-![Homepage of John Rey F. Billones Portfolio](public/logo.png)
+![Homepage of John Rey F. Billones Portfolio](public/branding/logo.png)
 
 ## Core Stack
 

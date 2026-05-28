@@ -1,6 +1,6 @@
 export const personalData = {
   name: "John Rey F. Billones",
-  profile: "/profile.jpg",
+  profile: "/profile/profile.jpg",
   designation: "Automation Engineer",
   designationAlternateWords: [
     "Automation Engineer.",

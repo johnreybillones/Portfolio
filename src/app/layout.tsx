@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "John Rey F. Billones Portfolio",
     images: [
       {
-        url: "/logo.png",
+        url: "/branding/logo.png",
         width: 1200,
         height: 630,
         alt: "John Rey F. Billones Portfolio Overview",
@@ -53,12 +53,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "John Rey F. Billones | Automation Engineer",
     description: "Building modern web applications and automation workflows.",
-    images: ["/logo.png"],
+    images: ["/branding/logo.png"],
   },
   icons: {
-    icon: [{ url: "/logo.png?v=2", type: "image/png" }],
-    shortcut: [{ url: "/logo.png?v=2", type: "image/png" }],
-    apple: [{ url: "/logo.png?v=2", type: "image/png" }],
+    icon: [{ url: "/branding/logo.png?v=2", type: "image/png" }],
+    shortcut: [{ url: "/branding/logo.png?v=2", type: "image/png" }],
+    apple: [{ url: "/branding/logo.png?v=2", type: "image/png" }],
   },
   robots: {
     index: true,

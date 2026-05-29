@@ -14,6 +14,9 @@ interface Project {
   tools: string[];
   role: string;
   description: string;
+  details?: string;
+  highlights?: string[];
+  challenges?: string[];
   code: string;
   demo: string;
   date: string;

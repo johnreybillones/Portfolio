@@ -18,6 +18,7 @@ import {
   Cpu,
   Calendar,
   ArrowLeft,
+  FileText,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -125,6 +126,23 @@ const ProjectDetails = async ({ params }: Props) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content (Left) */}
           <div className="lg:col-span-2 flex flex-col gap-16">
+            {/* Description */}
+            {project.details && (
+              <section className="flex flex-col gap-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center border border-red-500/20">
+                    <FileText className="w-6 h-6 text-red-500 shadow-[0_0_15px_rgba(239,68,68,0.5)]" />
+                  </div>
+                  <h2 className="text-3xl font-black text-white">
+                    Project Description
+                  </h2>
+                </div>
+                <p className="p-6 rounded-2xl border border-white/5 bg-white/[0.02] text-slate-300 text-lg leading-relaxed font-medium">
+                  {project.details}
+                </p>
+              </section>
+            )}
+
             {/* Highlights */}
             <section className="flex flex-col gap-8">
               <div className="flex items-center gap-3">

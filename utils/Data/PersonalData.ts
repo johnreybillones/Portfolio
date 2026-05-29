@@ -11,9 +11,9 @@ export const personalData = {
   ],
   description:
     "I am John Rey F. Billones, an Automation Engineer and Computer Science student focused on building practical systems that solve real workflow problems. My work combines modern frontend development with backend services, data pipelines, and automation tools to deliver reliable and user-focused solutions.",
-  email: "bjf0073@dlsud.edu.ph",
+  email: "jrfbillones@gmail.com",
   phone: "+63 9691263830",
-  address: "Dasmarinas, Cavite, Philippines",
+  address: "Dasmariñas City, Cavite, Philippines",
   github: "https://github.com/johnreybillones",
   facebook: "https://www.facebook.com/jrbillonesss/",
   linkedIn: "https://www.linkedin.com/in/johnreybillones",

@@ -70,7 +70,7 @@ function About() {
               <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
                 About{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">
-                  The Architect
+                  The Developer
                 </span>
               </h2>
             </div>
@@ -90,23 +90,23 @@ function About() {
 
             <div className="flex flex-wrap gap-8 items-center mt-4">
               <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">2+</span>
+                <span className="text-3xl font-black text-white">3</span>
                 <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">
-                  Years Experience
+                  Years Coding
                 </span>
               </div>
               <div className="w-[1px] h-10 bg-white/10" />
               <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">20+</span>
+                <span className="text-3xl font-black text-white">200+</span>
                 <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">
-                  Global Projects
+                  Total Users
                 </span>
               </div>
               <div className="w-[1px] h-10 bg-white/10" />
               <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">10+</span>
+                <span className="text-3xl font-black text-white">5</span>
                 <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">
-                  Tech Mastered
+                  Projects Completed
                 </span>
               </div>
             </div>

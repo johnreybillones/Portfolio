@@ -107,10 +107,6 @@ const Footer = () => (
           &copy; {new Date().getFullYear()} John Rey F. Billones. All rights
           reserved.
         </p>
-        <p className="flex items-center gap-2">
-          Made with <span className="text-red-600 animate-pulse">❤️</span> in
-          the Philippines
-        </p>
       </div>
     </div>
   </footer>

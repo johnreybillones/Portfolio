@@ -18,5 +18,5 @@ export const personalData = {
   facebook: "https://www.facebook.com/jrbillonesss/",
   linkedIn: "https://www.linkedin.com/in/johnreybillones",
   resume:
-    "https://docs.google.com/document/d/1KCR0Sa87f__O4DJb3y2dugUsO2894ONTOTn2iA9U2Ho/edit?tab=t.0",
+    "https://drive.google.com/file/d/1u1qeVa9oyP7x9fR2txCIswE4etU4XAaT/view?usp=drivesdk",
 };

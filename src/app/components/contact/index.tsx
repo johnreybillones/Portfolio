@@ -7,7 +7,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import { personalData } from "@/../utils/Data/PersonalData";
 import ContactWithoutCaptcha from "./contact-without-captcha";
 import SectionReveal from "../SectionReveal";
-import { MapPin, Send, MessageSquare } from "lucide-react";
+import { Send, MessageSquare } from "lucide-react";
 
 interface ContactLinkProps {
   href: string;
@@ -115,13 +115,6 @@ function ContactSection() {
                     label="Phone"
                     value={personalData.phone}
                     color="#dc2626"
-                  />
-                  <ContactInfoCard
-                    href="#"
-                    icon={MapPin}
-                    label="Location"
-                    value={personalData.address}
-                    color="#991b1b"
                   />
                 </div>
               </div>

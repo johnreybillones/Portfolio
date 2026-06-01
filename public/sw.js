@@ -35,20 +35,8 @@ define(["./workbox-f1770938"], function (s) {
     s.precacheAndRoute(
       [
         {
-          url: "/_next/static/RBOtu-BjEECbLIRyLCx8i/_buildManifest.js",
-          revision: "3bc51a595c92c25dedc0a74895787a7e",
-        },
-        {
-          url: "/_next/static/RBOtu-BjEECbLIRyLCx8i/_ssgManifest.js",
-          revision: "b6652df95db52feb4daf4eca35380933",
-        },
-        {
           url: "/_next/static/chunks/0e762574-ed88fd382f644ba9.js",
           revision: "ed88fd382f644ba9",
-        },
-        {
-          url: "/_next/static/chunks/111-3ea67769fbd4e157.js",
-          revision: "3ea67769fbd4e157",
         },
         {
           url: "/_next/static/chunks/139.7a5a8e93a21948c1.js",
@@ -67,8 +55,8 @@ define(["./workbox-f1770938"], function (s) {
           revision: "a29bc711fe659d46",
         },
         {
-          url: "/_next/static/chunks/380-c19ded48a2f4c022.js",
-          revision: "c19ded48a2f4c022",
+          url: "/_next/static/chunks/380-f68754eda76d84cc.js",
+          revision: "f68754eda76d84cc",
         },
         {
           url: "/_next/static/chunks/3d47b92a-a75679539f4a0241.js",
@@ -115,8 +103,8 @@ define(["./workbox-f1770938"], function (s) {
           revision: "f342b7cffc01feb0",
         },
         {
-          url: "/_next/static/chunks/667-0899c852a5f9d5da.js",
-          revision: "0899c852a5f9d5da",
+          url: "/_next/static/chunks/667-91a26a7e13261ba7.js",
+          revision: "91a26a7e13261ba7",
         },
         {
           url: "/_next/static/chunks/696-29f77d13f7e30458.js",
@@ -125,6 +113,10 @@ define(["./workbox-f1770938"], function (s) {
         {
           url: "/_next/static/chunks/795d4814-2fd1f527d68757e4.js",
           revision: "2fd1f527d68757e4",
+        },
+        {
+          url: "/_next/static/chunks/846-6894f2e7cd01fffe.js",
+          revision: "6894f2e7cd01fffe",
         },
         {
           url: "/_next/static/chunks/8e1d74a4-093513cb2e044173.js",
@@ -143,8 +135,8 @@ define(["./workbox-f1770938"], function (s) {
           revision: "671f0afcca457b09",
         },
         {
-          url: "/_next/static/chunks/app/components/about/page-e043c046e6c85290.js",
-          revision: "e043c046e6c85290",
+          url: "/_next/static/chunks/app/components/about/page-aa58baccbd05ed4e.js",
+          revision: "aa58baccbd05ed4e",
         },
         {
           url: "/_next/static/chunks/app/components/education/page-930f0f78ef64af87.js",
@@ -163,16 +155,16 @@ define(["./workbox-f1770938"], function (s) {
           revision: "038abe2ad6ef9f30",
         },
         {
-          url: "/_next/static/chunks/app/layout-0c57f6a62e29d546.js",
-          revision: "0c57f6a62e29d546",
+          url: "/_next/static/chunks/app/layout-63cb8dfe54c4c14e.js",
+          revision: "63cb8dfe54c4c14e",
         },
         {
           url: "/_next/static/chunks/app/manifest.webmanifest/route-a8c5a7dc707f2842.js",
           revision: "a8c5a7dc707f2842",
         },
         {
-          url: "/_next/static/chunks/app/page-7c8f7dda5d9eedcf.js",
-          revision: "7c8f7dda5d9eedcf",
+          url: "/_next/static/chunks/app/page-581c5e8211e58f0d.js",
+          revision: "581c5e8211e58f0d",
         },
         {
           url: "/_next/static/chunks/app/projects/%5Bid%5D/page-5844c4fb89740e6f.js",
@@ -239,6 +231,14 @@ define(["./workbox-f1770938"], function (s) {
           revision: "627a7304232cc274dbcae5bc96a8cf08",
         },
         {
+          url: "/_next/static/sprM_Fq4szCI89h-j6pnL/_buildManifest.js",
+          revision: "3bc51a595c92c25dedc0a74895787a7e",
+        },
+        {
+          url: "/_next/static/sprM_Fq4szCI89h-j6pnL/_ssgManifest.js",
+          revision: "b6652df95db52feb4daf4eca35380933",
+        },
+        {
           url: "/branding/logo.png",
           revision: "627a7304232cc274dbcae5bc96a8cf08",
         },
@@ -281,6 +281,22 @@ define(["./workbox-f1770938"], function (s) {
         {
           url: "/profile/profile.jpg",
           revision: "8b29e5e8be3bb8a7e71f0a8941a10fc3",
+        },
+        {
+          url: "/projects/Agrain.jpg",
+          revision: "beb8a88c82da6aba6545be828795f3d7",
+        },
+        {
+          url: "/projects/Automata Visualizer.jpg",
+          revision: "ece2aafa0104140464775061e9910a21",
+        },
+        {
+          url: "/projects/DCCMS.jpg",
+          revision: "db3d6f88ad8b3d73aa10a6d457d6a7c1",
+        },
+        {
+          url: "/projects/TechGap.jpg",
+          revision: "33af22357816d230cdbf0835c5a6f291",
         },
         {
           url: "/svg/common/blur-23.svg",

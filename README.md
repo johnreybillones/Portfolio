@@ -62,6 +62,16 @@ NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
 ```
 
+Create an EmailJS service and template before testing the contact form.
+The template should send to `jrfbillones@gmail.com` and include these variables:
+
+- `{{from_name}}`
+- `{{from_email}}`
+- `{{reply_to}}`
+- `{{message}}`
+
+Set the template Reply-To field to `{{reply_to}}` so replies go to the sender.
+
 4. Start the development server:
 
 ```bash
@@ -83,6 +93,8 @@ npm run format   # Format files with Prettier
 ## Deployment
 
 The project is configured for deployment on Vercel. Add the same EmailJS environment variables in the Vercel project settings before deploying the contact form.
+
+In Vercel, add the same EmailJS variables under Project Settings -> Environment Variables for Production, Preview, and Development as needed. Redeploy after adding or changing these values because `NEXT_PUBLIC_*` values are embedded into the client bundle at build time.
 
 ## Content Updates
 

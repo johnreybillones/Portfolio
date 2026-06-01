@@ -18,6 +18,10 @@ const ContactWithoutCaptcha = () => {
     required: false,
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState<{
+    type: "success" | "error";
+    text: string;
+  } | null>(null);
 
   const checkRequired = () => {
     if (input.email && input.message && input.name) {
@@ -25,27 +29,50 @@ const ContactWithoutCaptcha = () => {
     }
   };
 
-  const handleSendMail = async (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSendMail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!input.email || !input.message || !input.name) {
-      setError({ ...error, required: true });
+
+    const name = input.name.trim();
+    const email = input.email.trim();
+    const message = input.message.trim();
+
+    setStatusMessage(null);
+
+    if (!name || !email || !message) {
+      setError({ email: false, required: true });
       return;
-    } else if (error.email) {
-      return;
-    } else {
-      setError({ ...error, required: false });
     }
+
+    if (!isValidEmail(email)) {
+      setError({ email: true, required: false });
+      return;
+    }
+
+    setError({ email: false, required: false });
 
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "";
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "";
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? "";
+
+    if (!serviceID || !templateID || !publicKey) {
+      const message =
+        "The contact form is not configured yet. Please email jrfbillones@gmail.com directly.";
+      setStatusMessage({ type: "error", text: message });
+      toast.error(message);
+      return;
+    }
+
     const options = {
-      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? "",
+      publicKey,
     };
 
     const templateParams = {
-      from_name: input.name,
-      email: input.email,
-      message: `${input.message} \nEmail: ${input.email}`,
+      to_email: "jrfbillones@gmail.com",
+      from_name: name,
+      from_email: email,
+      reply_to: email,
+      email,
+      message: `${message}\n\nReply-to: ${email}`,
     };
 
     try {
@@ -58,21 +85,26 @@ const ContactWithoutCaptcha = () => {
       );
 
       if (res.status === 200) {
-        toast.success("Message sent successfully!");
-        setIsLoading(false);
+        const message = "Message sent successfully!";
+        toast.success(message);
+        setStatusMessage({ type: "success", text: message });
         setInput({
           name: "",
           email: "",
           message: "",
         });
+      } else {
+        throw new Error("Email service did not confirm the message.");
       }
     } catch (error: unknown) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Unable to send the message right now.";
+      toast.error(message);
+      setStatusMessage({ type: "error", text: message });
+    } finally {
       setIsLoading(false);
-      if (error instanceof Error) {
-        toast.error(error.message);
-      } else {
-        toast.error("An unexpected error occurred.");
-      }
     }
   };
 
@@ -88,7 +120,11 @@ const ContactWithoutCaptcha = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <form
+          className="flex flex-col gap-6"
+          onSubmit={handleSendMail}
+          noValidate
+        >
           {/* Name Field */}
           <div className="flex flex-col gap-2 group/input">
             <label className="text-sm font-bold text-slate-500 uppercase tracking-widest ml-1 flex items-center gap-2 group-focus-within/input:text-red-500 transition-colors">
@@ -159,9 +195,22 @@ const ContactWithoutCaptcha = () => {
               </p>
             )}
 
+            {statusMessage && (
+              <p
+                className={`text-sm text-center font-medium ${
+                  statusMessage.type === "success"
+                    ? "text-emerald-400"
+                    : "text-red-500"
+                }`}
+                role="status"
+              >
+                {statusMessage.text}
+              </p>
+            )}
+
             <button
-              className="relative group/btn overflow-hidden rounded-2xl bg-gradient-to-r from-red-600 to-red-900 p-[1px] transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
-              onClick={handleSendMail}
+              type="submit"
+              className="relative group/btn overflow-hidden rounded-2xl bg-gradient-to-r from-red-600 to-red-900 p-[1px] transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={isLoading}
             >
               <div className="relative flex items-center justify-center gap-2 bg-[#050505] group-hover/btn:bg-transparent transition-all rounded-[15px] px-8 py-4 text-white font-bold uppercase tracking-widest text-sm">
@@ -176,7 +225,7 @@ const ContactWithoutCaptcha = () => {
               </div>
             </button>
           </div>
-        </div>
+        </form>
       </div>
 
       {/* Decorative Accent */}

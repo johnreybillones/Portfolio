@@ -254,8 +254,8 @@ const HeroSection = () => {
                   <div className="flex gap-4">
                     <span className="text-slate-600 italic">05</span>
                     <p className="ml-4">
-                      <span className="text-slate-200">passionate:</span>{" "}
-                      <span className="text-red-600">true</span>,
+                      <span className="text-slate-200">bazaar:</span>{" "}
+                      <span className="text-red-600">forever</span>,
                     </p>
                   </div>
                   <div className="flex gap-4">
